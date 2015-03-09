@@ -84,13 +84,19 @@ class ChessBoard:
 
     _promotion_value = 0
 
-    def log_func(self, function_name, start):
+    def log_func(self, function_name, start, log_format):
         if 1 == start:
             print function_name, ':', 'start'
         elif 0 == start:
             print function_name, ':', 'end'
-        print "Log in the form of CSV"
-        print "Logged" 
+        else
+            print function_name, ':', 'in progress'
+        
+        if 1 == log_format:
+            print 'Generate logs in .tsv format'
+        elif 2 == log_format:
+            print 'Generate logs in .csv format' 
+	else
 
     def __init__(self):
         self.resetBoard()
