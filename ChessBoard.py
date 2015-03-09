@@ -1352,6 +1352,11 @@ class ChessBoard:
         res = self._formatTextMove(move, format)
         self.redo()
         print res
+    
+    def winner(self,name_flag,name):
+        if '1' == name_flag:
+           print "The winner is ",name 
+
 
 if __name__ == "__main__":
     cb = ChessBoard()
