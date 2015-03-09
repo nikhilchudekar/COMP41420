@@ -1368,6 +1368,14 @@ class ChessBoard:
         if '1' == name_flag:
            print "The winner is ",name 
 
+	def draw(self,is_draw,play_again)
+		if is_draw and play_again:
+			return 1
+		elif is_draw and !play_again:
+			return 2
+		else
+			return 3
+			
 
 if __name__ == "__main__":
     cb = ChessBoard()
