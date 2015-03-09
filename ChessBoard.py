@@ -89,11 +89,14 @@ class ChessBoard:
             print function_name, ':', 'start'
         elif 0 == start:
             print function_name, ':', 'end'
+        else
+            print function_name, ':', 'in progress'
         
         if 1 == log_format:
             print 'Generate logs in .tsv format'
         elif 2 == log_format:
             print 'Generate logs in .csv format' 
+	else
 
     def __init__(self):
         self.resetBoard()
