@@ -1331,6 +1331,7 @@ class ChessBoard:
         """
         Print the current board layout.
         """
+		print "Current Game for Player " + self.player
         print "  +-----------------+"
         rank = 8
         for l in self._board:
