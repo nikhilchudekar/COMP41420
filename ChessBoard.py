@@ -1364,8 +1364,9 @@ class ChessBoard:
     
     def winner(self,name_flag,name):
         if '1' == name_flag:
-           print "The winner is ",name 
-
+           print "The winner is ",name
+        else   
+           print "There is no winner\n"
 
 if __name__ == "__main__":
     cb = ChessBoard()
