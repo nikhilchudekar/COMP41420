@@ -96,7 +96,8 @@ class ChessBoard:
             print 'Generate logs in .tsv format'
         elif 2 == log_format:
             print 'Generate logs in .csv format' 
-	else
+        
+        print 'Work in progress for providing support of different levels of errors.'
 
     def __init__(self):
         self.resetBoard()
