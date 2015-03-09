@@ -92,6 +92,7 @@ class ChessBoard:
 		else
 			print function_name, ':', 'in progress'
         print "Log in the form of CSV" 
+        print "Logged" 
 
     def __init__(self):
         self.resetBoard()
