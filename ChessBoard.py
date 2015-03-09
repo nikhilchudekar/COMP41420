@@ -84,6 +84,12 @@ class ChessBoard:
 
     _promotion_value = 0
 
+    def log_func(self, function_name, start):
+        if 1 == start:
+            print function_name, ':', 'start'
+        elif 0 == start:
+            print function_name, ':', 'end'
+
     def __init__(self):
         self.resetBoard()
 
@@ -1353,6 +1359,11 @@ class ChessBoard:
         res = self._formatTextMove(move, format)
         self.redo()
         print res
+    
+    def winner(self,name_flag,name):
+        if '1' == name_flag:
+           print "The winner is ",name 
+
 
 if __name__ == "__main__":
     cb = ChessBoard()
