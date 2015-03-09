@@ -92,6 +92,8 @@ class ChessBoard:
         
         if 1 == log_format:
             print 'Generate logs in .tsv format'
+        elif 2 == log_format:
+            print 'Generate logs in .csv format' 
 
     def __init__(self):
         self.resetBoard()
@@ -1340,6 +1342,7 @@ class ChessBoard:
         """
         Print the current board layout.
         """
+		print "Current Game for Player " + self.player
         print "  +-----------------+"
         rank = 8
         for l in self._board:
@@ -1361,6 +1364,11 @@ class ChessBoard:
         res = self._formatTextMove(move, format)
         self.redo()
         print res
+    
+    def winner(self,name_flag,name):
+        if '1' == name_flag:
+           print "The winner is ",name 
+
 
 if __name__ == "__main__":
     cb = ChessBoard()
