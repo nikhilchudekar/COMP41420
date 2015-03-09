@@ -89,6 +89,8 @@ class ChessBoard:
             print function_name, ':', 'start'
         elif 0 == start:
             print function_name, ':', 'end'
+		else
+			print function_name, ':', 'in progress'
 
     def __init__(self):
         self.resetBoard()
