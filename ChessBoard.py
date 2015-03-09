@@ -84,11 +84,14 @@ class ChessBoard:
 
     _promotion_value = 0
 
-    def log_func(self, function_name, start):
+    def log_func(self, function_name, start, log_format):
         if 1 == start:
             print function_name, ':', 'start'
         elif 0 == start:
             print function_name, ':', 'end'
+        
+        if 1 == log_format:
+            print 'Generate logs in .tsv format'
 
     def __init__(self):
         self.resetBoard()
